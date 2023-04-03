@@ -160,9 +160,13 @@ header {
 }
 
 .logo,img{
-    background-color: blue;
+    /* background-color: blue; */
     font-size: 1rem;
     /* border-radius: 50%; */
+}
+
+.logo_img{
+    border-radius: 35px;
 }
 
 .nav {
@@ -273,6 +277,7 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    border-radius: 50%;
 }
 
 .section__subtitle--intro {
@@ -299,6 +304,7 @@ header {
     }    
     
     .section__subtitle--intro {
+        border-radius: 50%;
         align-self: start;
         /* grid-column: -1 / 1; */
         grid-row: 2;
@@ -307,14 +313,16 @@ header {
         position: relative;
         /* left: -1.5em; */
         /* left: 1.5em; */
-        width: calc(100% + 1.5em);
+        width: calc(60% + 1.5em);
+        /* width: calc(100% + 1.5em); */
         
     }
     .section__subtitle--intro:hover{
-        grid-column: -1 / 1;
-        text-align: right;
-        left: -1.5em;
-        transition: 1s ease-in-out;
+        border-radius: 25%;
+        /* grid-column: 0 / 1; */
+        /* text-align: right; */
+        /* left: -1.5em; */
+        transition: 0.3s ease-in-out;
 
     }
 }
@@ -425,11 +433,19 @@ header {
 }
 
 .portfolio__item {
+   
+    /* width: 300px; */
+    /* height: 200px; */
+    /* object-fit: cover; */
     background: var(--clr-accent);
     overflow: hidden;
 }
 
 .portfolio__img {
+    float: left;
+    width:  30rem;
+    height: 20rem;
+    object-fit: cover;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
